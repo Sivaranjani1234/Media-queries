@@ -1,0 +1,208 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.h1{
+    background-image: url(background.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    position: relative;
+}
+.i1{
+    cursor: pointer;
+    height: 100px;
+    width:140px;
+    margin-top: 50px;
+}
+button{
+    background-color: transparent;
+    border: 2px solid white;
+    border-radius: 10px;
+    padding: 10px 25px;
+    color: white;
+}
+.d1{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 85%;
+}
+.d3{
+    width: 50px;
+    height: 100vh;
+    background: linear-gradient(91deg,#0c8eae 0%, #000729 80%);
+    position: absolute;
+    right: 0;
+    top:0;
+}
+.i2{
+    position: absolute;
+    height:25px;
+    margin: 40px 10px;
+}
+.su1 img , .su2 img{
+    height:25px;
+}
+.d2{
+    position: absolute;
+    top: 50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    color:white;
+    font-size: 25px;
+    text-align: center;
+}
+.su1{
+    position: absolute;
+    top:50%;
+    transform: translatey(-50%,-50%);
+    text-align: center;
+}
+.su2{
+    
+    position: absolute;
+    bottom: 10px;
+    text-align: center;
+}
+.bubble img {
+    width:50px;
+    animation: bubble 7s infinite linear ;
+}
+.bubble{
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 50px;
+    width: 100%;
+}
+@keyframes bubble {
+    0%{
+      opacity: -1;
+      transform: translatey(0);
+    }
+    50%{
+       opacity: 1;
+    }
+    70%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+        transform: translatey(-90vh);
+    }
+    
+}
+.bubble img:nth-child(1){
+      width: 70px;
+      animation-delay: 2s;
+}
+.bubble img:nth-child(2){
+    width: 60px;
+    animation-delay: 3s;
+}
+.bubble img:nth-child(3){
+    width: 50px;
+    animation-delay: 1s;
+}
+.bubble img:nth-child(4){
+    width: 40px;
+    animation-delay: 3s;
+}
+.bubble img:nth-child(5){
+    width: 30px;
+    animation-delay: 4s;
+}
+.bubble img:nth-child(6){
+    width: 40px;
+    animation-delay: 3s;
+}
+.bubble img:nth-child(7){
+    width: 50px;
+    animation-delay: 1s;
+}
+@media screen and (max-width:600px)
+{
+    .h1{
+        background-image: url(https://wallpapercave.com/dwp1x/wp2634197.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 100vh;
+        position: relative;
+    }
+    .d2 h1{
+        font-size: 20px;
+    }
+    .i1{
+    cursor: pointer;
+    height: 50px;
+    width:140px;
+    margin-top: 5px;
+}
+    .d3{
+    width: 100%;
+    height: 50px;
+    background: linear-gradient(91deg,#0c8eae 0%, #000729 80%);
+    position: absolute;
+    bottom: 150px;
+    top: auto;
+}
+.i2{
+    position: absolute;
+    height:15px;
+    margin:10px;
+    margin-left: 20px;
+}  
+.su1{
+    position: unset;
+    bottom:100px;
+    left: 20px;
+    transform: translatey(-50%,-50%);
+    text-align: center;
+    margin: 10px;
+
+}
+.su2{
+    
+    position: absolute;
+    right: 60px;
+    bottom: 10px;
+    text-align: center;
+}
+button{
+    background-color: transparent;
+    border: 2px solid white;
+    border-radius: 10px;
+    padding: 10px 10px;
+    color: white;
+}
+.d1{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 85%;
+}
+    }
+@media screen and (max-width:900px) and (min-width:600px)
+{
+    button{
+        background-color: transparent;
+        border: 2px solid white;
+        border-radius: 10px;
+        padding: 10px 10px;
+        color: rgb(19, 98, 216);
+        width: 200px;
+        font-size: large;
+        font-size: 20px;
+    }
+    .d2 h1{
+        font-size: 60px;
+        color: blue;
+        font-size: larger;
+        font-weight: 600;
+    }
+
+}
+
